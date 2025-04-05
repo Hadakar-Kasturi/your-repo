@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'git-creds', url: 'https://github.com/Hadakar-Kasturi/your-repo.git', branch: 'main'
+                git credentialsId: 'git-token', url: 'https://github.com/Hadakar-Kasturi/your-repo.git', branch: 'main'
             }
         }
 
