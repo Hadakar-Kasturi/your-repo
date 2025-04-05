@@ -14,7 +14,7 @@ pipeline {
 
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv(my_sonar) {
+                withSonarQubeEnv('my_sonar') {
                     script {
                         def projectKey = "my-app-${env.BUILD_ID}"
                         def projectName = "My App Build #${env.BUILD_ID}"
